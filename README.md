@@ -17,6 +17,8 @@ You can either let the script guide you through the process (there are only 2 in
 
 `-n` or `--name` NAME gives script desired name of the enum
 
+`-a` or `--all` scrape all types, not just `case`
+
 ## Purpose
 Created to learn a little bit of Python3 and help with development of [ReactantUI](https://github.com/Brightify/ReactantUI).
 
