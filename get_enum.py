@@ -11,9 +11,10 @@ def indent():
     return '\t' * tabs
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--defaultName', help='use default name and don\'t ask for a new one', action='store_true')
+group = parser.add_mutually_exclusive_group()
+group.add_argument('-d', '--defaultName', help='use default name and don\'t ask for a new one', action='store_true')
+group.add_argument('-n', '--name', help='give name to script directly')
 parser.add_argument('-l', '--link', help='give link to script directly')
-parser.add_argument('-n', '--name', help='give name to script directly')
 parser.add_argument('-a', '--allTypes', help='scrape all types, not just cases', action='store_true')
 args = parser.parse_args()
 
